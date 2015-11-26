@@ -1,0 +1,59 @@
+$itemMargin: 30px;
+
+#mobile-check {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    float: none;
+}
+
+.rbblockgallery {
+    position: relative;
+    div[class^='rb-column'], div[class*='rb-column'] {
+        height: 100%;
+        .rbblockgallery-item {
+            position: relative;
+            margin-bottom: $itemMargin;
+            overflow: hidden;
+            background: gray; //tymczasowo
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .cropToV, cropToH {
+            img {
+                display: block;
+                position: absolute;
+            }
+        }
+        .cropToV {
+            img {
+                left: 50%;
+                height: 100%;
+                width: auto;
+                max-width: none;
+                transform: translateX(-50%);
+            }
+        }
+        .cropToH {
+            img {
+                top: 50%;
+                width: 100%;
+                height: auto;
+                max-height: none;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .rb-preloader {
+        
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #mobile-check {
+        float: left;
+    }
+}

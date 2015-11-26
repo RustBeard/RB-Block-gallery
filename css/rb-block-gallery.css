@@ -1,0 +1,60 @@
+#mobile-check {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  float: none;
+}
+
+.rbblockgallery {
+  position: relative;
+}
+
+.rbblockgallery div[class^='rb-column'], .rbblockgallery div[class*='rb-column'] {
+  height: 100%;
+}
+
+.rbblockgallery div[class^='rb-column'] .rbblockgallery-item, .rbblockgallery div[class*='rb-column'] .rbblockgallery-item {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background: gray;
+}
+
+.rbblockgallery div[class^='rb-column'] .rbblockgallery-item img, .rbblockgallery div[class*='rb-column'] .rbblockgallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.rbblockgallery div[class^='rb-column'] .cropToV img, .rbblockgallery div[class^='rb-column'] cropToH img, .rbblockgallery div[class*='rb-column'] .cropToV img, .rbblockgallery div[class*='rb-column'] cropToH img {
+  display: block;
+  position: absolute;
+}
+
+.rbblockgallery div[class^='rb-column'] .cropToV img, .rbblockgallery div[class*='rb-column'] .cropToV img {
+  left: 50%;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.rbblockgallery div[class^='rb-column'] .cropToH img, .rbblockgallery div[class*='rb-column'] .cropToH img {
+  top: 50%;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #mobile-check {
+    float: left;
+  }
+}
+
+/*# sourceMappingURL=rb-block-gallery.css.map */
