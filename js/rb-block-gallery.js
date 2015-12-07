@@ -1,4 +1,11 @@
 /*!
+ * RB Block-gallery
+ * ver. 0.5 beta
+ * JQuery plugin that creates gallery from images (and optionally) text blocks, placed in equal rectangular block.
+ * 
+ * Copyright (c) 2015 Marek Kędzierski
+ * License: MIT
+ * 
  * Based on jQuery plugin boilerplate by @ajpiano and @addyosmani
  */
 
